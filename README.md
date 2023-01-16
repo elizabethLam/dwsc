@@ -8,4 +8,6 @@
 
 *pelicula-omdb: Use external API to confirm if a movie exist in the external database.
 
-*comentario: add a coment related to a movie.
+*comentario: add a coment related to a movie. Use the local database
+
+*busca-pelicula: find a movie by its name. Use the local database.
