@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<documentoProductorConsumidor>
+	<mensaje>
+		<fecha>18/12/1985</fecha>
+		<descripcion_corta>Esta es la descripcion corta.</descripcion_corta>
+		<descripcion_larga>Esta es la descripcion larga.</descripcion_larga>
+	</mensaje>
+</documentoProductorConsumidor>

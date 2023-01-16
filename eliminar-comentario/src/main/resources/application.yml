@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: eliminar-comentario
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pelicula_bd
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect 
+    hibernate:
+      ddl-auto: update
+
+ 
+server:
+  port: ${PORT:${SERVER_PORT:8088}} 
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    service-url:
+     default-zone: http://localhost:8761

@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Author" content="Hector Alejandro Lam Echavarria">
+<meta name="Description" content="Universidad de Almeria España">
+<title>Productor-Consumidor</title>
+</head>
+<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" alink="#990000" link="#043a66" vlink="#999900">
+	<p><b><font face="Arial,Helvetica" color="#003366" size="+1">Gestor de noticias (Productor-Consumidor)</font></b></p>
+	<table>
+		<tr>
+			<td>
+				<form
+					action="http://localhost:8080/Productor-Consumidor/Servlet" method="post">
+					<font face="Arial,Helvetica" size="-1">Fecha:</font>
+					<input name="fecha" size="20" placeholder="dd/mm/aaaa">		
+					<br><br>
+					<font face="Arial,Helvetica" size="-1">Descripción corta:</font>
+					<p><input name="descripcion_corta" size="45"></p>			
+					<font face="Arial,Helvetica" size="-1">Descripción larga:</font>					
+					<p><textarea name="descripcion_larga" rows="10" cols="40"></textarea></p>
+			  		<input name="action" value="Enviar" alt="Pulsar boton para enviar elemento al buffer" type="submit"/>
+			    	<input value="Reset" alt="Pulsar boton para reset info." type="reset"/>
+			    	|
+			    	<input name="action" value="Recibir" alt="Pulsar boton para recibir ultimo elemento del buffer" type="submit"> 
+			 		<input name="action" value="Leer" alt="Pulsar boton para leer ultimo elemento del buffer" type="submit"> 
+			 		|
+			 		<input name="action" value="Ver buffer" alt="Pulsar boton para ver el contenido del buffer" type="submit"> 
+				</form>
+			</td>
+			<td>&nbsp;&nbsp;&nbsp;</td>
+			<td style="vertical-align: top;">
+				<form
+					action="http://localhost:8080/Productor-Consumidor/Servlet" method="post">
+					<font face="Arial,Helvetica" size="-1">Longitud del buffer:</font>
+					<input name="pBufferLength" size="5">
+					<br><br>
+			  		<input name="action" value="Longitud buffer" alt="Pulsar boton para fijar el numero maximo de elementos permitidos en el buffer" type="submit"/>
+			  		<input name="action" value="Get longitud" alt="Pulsar boton para obtener la longitud buffer" type="submit"/>
+				</form>
+			</td>	
+		</tr>	
+	</table>
+</body>
+</html>
